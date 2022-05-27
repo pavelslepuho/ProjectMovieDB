@@ -11,10 +11,10 @@ let personaMovieDB = {
     privat: false,
 };
 
-let lastFilm = prompt("Один из последних просмотренных фильмов?");
-let lastFilmRate = prompt("На сколько оцените его?");
-let secondLastFilm = prompt("Один из последних просмотренных фильмов?");
-let secondLastFilmRate = prompt("На сколько оцените его?");
+let lastFilm = prompt("Один из последних просмотренных фильмов?"),
+    lastFilmRate = prompt("На сколько оцените его?"),
+    secondLastFilm = prompt("Один из последних просмотренных фильмов?"),
+    secondLastFilmRate = prompt("На сколько оцените его?");
 
 personaMovieDB.movies[lastFilm] = lastFilmRate;
 personaMovieDB.movies[secondLastFilm] = secondLastFilmRate;
