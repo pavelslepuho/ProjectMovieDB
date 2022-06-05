@@ -26,3 +26,15 @@ for (let i = 0; i <= 1; i++) {
 }
 
 console.log(personalMovieDB);
+
+let question;
+
+function writeYourGenres() {
+    for (let i = 0; i < 3; i++) {
+        question = prompt(`Ваш любимый жанр под номером ${i + 1}?`, '');
+        personalMovieDB.genres[i] = question;
+    }
+    console.log(personalMovieDB);
+}
+
+writeYourGenres();
